@@ -431,6 +431,47 @@ The tool is [available here](https://x.com/i/under_the_hood) — we'll be shapin
 ---
 
 
+## Quick Start
+
+This repository is primarily intended for transparency and research purposes. Some components can be explored directly, while others require additional infrastructure not included in this repository.
+
+### Prerequisites
+
+* Git
+* Rust (latest stable version recommended)
+* Python 3.10+
+* Basic understanding of recommendation systems and machine learning pipelines
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/<repository-owner>/<repository-name>.git
+cd <repository-name>
+```
+
+### Explore the Architecture
+
+New contributors are encouraged to review the following sections first:
+
+1. **Overview** – Understand the high-level design.
+2. **System Architecture** – Learn how requests flow through the pipeline.
+3. **Components** – Review the responsibilities of each subsystem.
+4. **Scoring and Ranking** – Understand how engagement predictions are combined into a final score.
+5. **Filtering** – Learn how visibility decisions affect content distribution.
+
+### Recommended Learning Path
+
+For readers interested in understanding the ranking system:
+
+1. Start with `home-mixer/`
+2. Review `phoenix/` retrieval and ranking
+3. Explore `visibility-filtering/`
+4. Study `simclusters/`
+5. Examine scoring parameters in `home-mixer/params/param.rs`
+
+### Notes
+
+Some production infrastructure, internal services, prompts, and configuration files are intentionally omitted for transparency and security reasons. Refer to the **What's not in this repo?** section for details.
 
 ## Key Design Decisions
 
